@@ -22,18 +22,18 @@ body {
 
 #wrapper-background {
     position: absolute;
-    top: 20%;
+    top: 25%;
     width: 100%;
-    height: 55%;
+    height: 41%;
     background-image: url("../img/wake-up-pom.gif");
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: contain;
-    z-index: -50;    
+    z-index: -50;
 }
 
 #wrapper-background-filter {
-    background-color: #97bae783;    
+    background-color: #97bae783;
     position: absolute;
     width: 100%;
     height: 120%;
@@ -100,13 +100,13 @@ h2 {
 #counter-container {
     text-align: center;
     font-weight: bold;
-    margin-top: 550px;
+    margin-top: 480px;
     margin-bottom: 100px;
-   
+
 }
 
 #counter-container>p {
-    text-shadow: #f2fc2d 0 0 10px;
+    text-shadow: #421a87 0 0 10px;
 }
 
 #global-counter {
@@ -161,6 +161,14 @@ h2 {
 
     animation: ripple 1s;
     opacity: 0;
+}
+
+#restart-button {
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
 }
 
 @keyframes ripple {

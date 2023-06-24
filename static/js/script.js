@@ -13,7 +13,7 @@ var LANGUAGES = {
             "page-descriptions": "ผมไม่รู้ แล้วคุณรู้หรอ?? ก็บอกว่าไม่รู้ไง!! <del>ไอx่า</del> อยากรู้ก็ไปถามเขานู่น ผมไม่รู้~~",
             "counter-descriptions": ["ลุงป้อมได้พูดคำว่า ` ไม่รู้ ` มา", "คำว่า ` ไม่รู้ ` ได้หลุดจากปากลุงป้อมไป"],
             "counter-unit": "ครั้ง",
-            "counter-button": ["ก็บอกว่าไม่รู้วว~!", "กูไม่รู้วว~!" ,"ใครจะไปรู้อ่ะ?!"],
+            "counter-button": ["ก็บอกว่าไม่รู้วว~!", "กูไม่รู้วว~!", "ใครจะไปรู้อ่ะ?!"],
             "access-via-pages": "You're currently accessing via GitHub Pages. For users in China (Mainland) or some other regions, click <a href='https://herta.ft2.ltd/'>here to access the mirror on Netlify</a>. ",
             "access-via-mirror": "Congratulations! You are using a mirror site, which should speed up access within China (Mainland) and some regions. Click here to <a href='https://duiqt.github.io/herta_kuru/'>visit the source site on GitHub Pages</a>.",
             "show-credits-text": "Show Credits",
@@ -37,7 +37,7 @@ var LANGUAGES = {
         audioList: [
             "audio/cn/japairudaingai.mp3",
             "audio/cn/mairu.mp3",
-            "audio/cn/pommairukunrumaila.mp3",            
+            "audio/cn/pommairukunrumaila.mp3",
         ],
         texts: {
             "page-title": "黑塔转圈圈",
@@ -494,4 +494,45 @@ var LANGUAGES = {
     }
 
     $("#show-options-opt").on("click", () => showOptions())
-})(); 
+})();
+
+// Get the counter element
+const counterElement = document.getElementById('local-counter');
+
+// Initialize the counter value
+let counterValue = 0;
+
+// Check if counter value is stored in local storage
+if (localStorage.getItem('counterValue')) {
+  // Retrieve the counter value from local storage
+  counterValue = parseInt(localStorage.getItem('counterValue'));
+  counterElement.textContent = counterValue;
+}
+
+// Add event listener to the counter button
+document.getElementById('counter-button').addEventListener('click', function() {
+  // Increment the counter value
+  counterValue++;
+
+  // Update the counter element
+  counterElement.textContent = counterValue;
+
+  // Save the counter value to local storage
+  localStorage.setItem('counterValue', counterValue);
+});
+
+// Add event listener to the restart button
+document.getElementById('restart-button').addEventListener('click', function() {
+  // Reset the counter value
+  counterValue = 0;
+
+  // Update the counter element
+  counterElement.textContent = counterValue;
+
+  // Clear the counter value from local storage
+  localStorage.removeItem('counterValue');
+});
+
+
+
+
