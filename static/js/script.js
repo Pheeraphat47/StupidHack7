@@ -8,12 +8,12 @@ var LANGUAGES = {
             "audio/en/en_3.mp3"
         ],
         texts: {
-            "page-title": "Welcome to herta kuru~",
-            "doc-title": "Kuru Kuru~",
-            "page-descriptions": "The website for Herta, the <del>annoying</del> cutest genius Honkai: Star Rail character out there.",
-            "counter-descriptions": ["The kuru~ has been squished for", "Herta has been kuru~ed for"],
-            "counter-unit": "times",
-            "counter-button": ["Squish the kuru~!", "Kuru kuru~!"],
+            "page-title": "ลุงป้อม แอ๊ะ แอ๋ ~",
+            "doc-title": "Lungpom~",
+            "page-descriptions": "ผมไม่รู้ แล้วคุณรู้หรอ?? ก็บอกว่าไม่รู้ไง!! <del>ไอx่า</del> อยากรู้ก็ไปถามเขานู่น ผมไม่รู้~~",
+            "counter-descriptions": ["ลุงป้อมได้พูดคำว่า ` ไม่รู้ ` มา", "คำว่า ` ไม่รู้ ` ได้หลุดจากปากลุงป้อมไป"],
+            "counter-unit": "ครั้ง",
+            "counter-button": ["ก็บอกว่าไม่รู้วว~!", "กูไม่รู้วว~!" ,"ใครจะไปรู้อ่ะ?!"],
             "access-via-pages": "You're currently accessing via GitHub Pages. For users in China (Mainland) or some other regions, click <a href='https://herta.ft2.ltd/'>here to access the mirror on Netlify</a>. ",
             "access-via-mirror": "Congratulations! You are using a mirror site, which should speed up access within China (Mainland) and some regions. Click here to <a href='https://duiqt.github.io/herta_kuru/'>visit the source site on GitHub Pages</a>.",
             "show-credits-text": "Show Credits",
@@ -32,14 +32,12 @@ var LANGUAGES = {
             "CREDITS:localization:Indonesian": "Indonesian Localization Contributor",
             "CREDITS:inspiration": "Inspiration"
         },
-        cardImage: "img/card_en.jpg"
+        cardImage: "img/pomsmile.jpg"
     }, "cn": {
         audioList: [
-            "audio/cn/gululu.mp3",
-            "audio/cn/gururu.mp3",
-            "audio/cn/转圈圈.mp3",
-            "audio/cn/转圈圈咯.mp3",
-            "audio/cn/要坏掉了.mp3"
+            "audio/cn/japairudaingai.mp3",
+            "audio/cn/mairu.mp3",
+            "audio/cn/pommairukunrumaila.mp3",            
         ],
         texts: {
             "page-title": "黑塔转圈圈",
@@ -71,9 +69,11 @@ var LANGUAGES = {
     },
     "ja": {
         audioList: [
-            "audio/ja/kuruto.mp3",
-            "audio/ja/kuru1.mp3",
-            "audio/ja/kuru2.mp3",
+            "audio/ja/japairudaingai.mp3",
+            "audio/ja/pommairukunrumaila.mp3",
+            "audio/ja/mairu.mp3",
+            "audio/ja/youngmairu.mp3",
+            "audio/ja/kaijapairu.mp3",
         ],
         texts: {
             "page-title": "ヘルタクルへようこそ~",
@@ -247,8 +247,12 @@ var LANGUAGES = {
     });
 
     // try caching the hertaa1.gif and hertaa2.gif images by calling the tryCacheUrl function
-    cacheStaticObj("img/hertaa1.gif");
-    cacheStaticObj("img/hertaa2.gif");
+    cacheStaticObj("img/image6.png");
+    cacheStaticObj("img/image5.png");
+    cacheStaticObj("img/image4.png");
+    cacheStaticObj("img/image3.png");
+    cacheStaticObj("img/image2.png");
+    cacheStaticObj("img/image1.png");
 
     // Define a function that takes an array as an argument and returns a random item from the array
     function randomChoice(myArr) {
@@ -269,7 +273,7 @@ var LANGUAGES = {
     function getRandomAudioUrl() {
         var localAudioList = getLocalAudioList();
         if (current_vo_language == "ja") {
-            const randomIndex = Math.floor(Math.random() * 2) + 1;
+            const randomIndex = Math.floor(Math.random() * 5);
             return localAudioList[randomIndex];
         }
         const randomIndex = Math.floor(Math.random() * localAudioList.length);
@@ -294,9 +298,9 @@ var LANGUAGES = {
 
     function animateHerta() {
         let id = null;
-        const random = Math.floor(Math.random() * 2) + 1;
+        const random = Math.floor(Math.random() * 6) + 1;
         const elem = document.createElement("img");
-        elem.src = cacheStaticObj(`img/hertaa${random}.gif`);
+        elem.src = cacheStaticObj(`img/image${random}.png`);
         elem.style.position = "absolute";
         elem.style.right = "-500px";
         elem.style.top = counterButton.getClientRects()[0].bottom + scrollY - 430 + "px"

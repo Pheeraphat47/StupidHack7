@@ -22,20 +22,21 @@ body {
 
 #wrapper-background {
     position: absolute;
+    top: 20%;
     width: 100%;
-    height: 100%;
-    background-image: url("../img/hertaa1.gif");
+    height: 55%;
+    background-image: url("../img/wake-up-pom.gif");
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: contain;
-    z-index: -50;
+    z-index: -50;    
 }
 
 #wrapper-background-filter {
-    background-color: #9d88d3f5;
+    background-color: #97bae783;    
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 120%;
     z-index: -20;
 }
 
@@ -47,7 +48,7 @@ body {
 }
 
 #content {
-    margin: 2vh auto;
+    margin: 0 auto;
     width: 80vw;
 }
 
@@ -70,10 +71,12 @@ h2 {
 
 #page-title {
     text-align: left;
+    font-size: 50px;
 }
 
 #title-img {
     height: 4em;
+    margin-top: 30px;
 }
 
 #language-selector-container {
@@ -97,11 +100,13 @@ h2 {
 #counter-container {
     text-align: center;
     font-weight: bold;
-    margin: 64px 0;
+    margin-top: 550px;
+    margin-bottom: 100px;
+   
 }
 
 #counter-container>p {
-    text-shadow: #9d88d3 0 0 10px, #9d88d3 0 0 10px, #9d88d3 0 0 10px, #9d88d3 0 0 10px, #9d88d3 0 0 10px;
+    text-shadow: #f2fc2d 0 0 10px;
 }
 
 #global-counter {
