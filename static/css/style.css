@@ -188,9 +188,15 @@ h2 {
     color: black;
     padding: 16px 10vw;
     display: flex;
+    flex-direction: column;
     gap: 30px;
     align-items: center;
     justify-content: center;
+}
+
+#footer h3{
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 #herta-card {
