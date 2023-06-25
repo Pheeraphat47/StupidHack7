@@ -41,6 +41,11 @@
                         repellendus, iusto vero nihil suscipit, porro velit dicta minus culpa ducimus commodi hic veniam
                         fugit perferendis id enim!
                     </button>
+
+                    <div id="dont-press">
+                        <button onclick="generateRandomText(event); playBackgroundSound()">อย่ากด</button>
+                    </div>
+
                     <!-- HTML Restart Container -->
                     <div id="restart-container">
                         <button id="restart-button">
@@ -79,6 +84,8 @@
         gtag('js', new Date());
         gtag('config', 'G-T303QPC9L9');
     </script>
+
+    <audio id="background-sound" src="./static/audio/th/mairu.mp3" loop></audio>
 </body>
 
 </html>
