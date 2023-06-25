@@ -1,11 +1,13 @@
 var LANGUAGES = {
-    "_": { defaultLanguage: "en", defaultVOLanguage: "ja" },
-    "en": {
+    "_": { defaultLanguage: "th", defaultVOLanguage: "th" },
+    "th": {
         audioList: [
-            // TODO audio random weight
-            "audio/en/en_1.mp3",
-            "audio/en/en_2.mp3",
-            "audio/en/en_3.mp3"
+            // Random audios
+            "audio/th/japairudaingai.mp3",
+            "audio/th/pommairukunrumaila.mp3",
+            "audio/th/mairu.mp3",
+            "audio/th/youngmairu.mp3",
+            "audio/th/kaijapairu.mp3"
         ],
         texts: {
             "page-title": "ลุงป้อม แอ๊ะ แอ๋ ~",
@@ -13,151 +15,10 @@ var LANGUAGES = {
             "page-descriptions": "ผมไม่รู้ แล้วคุณรู้หรอ?? ก็บอกว่าไม่รู้ไง!! <del>ไอx่า</del> อยากรู้ก็ไปถามเขานู่น ผมไม่รู้~~",
             "counter-descriptions": ["ลุงป้อมได้พูดคำว่า ` ไม่รู้ ` มา", "คำว่า ` ไม่รู้ ` ได้หลุดจากปากลุงป้อมไป"],
             "counter-unit": "ครั้ง",
-            "counter-button": ["ก็บอกว่าไม่รู้วว~!", "กูไม่รู้วว~!", "ใครจะไปรู้อ่ะ?!"],
-            "access-via-pages": "You're currently accessing via GitHub Pages. For users in China (Mainland) or some other regions, click <a href='https://herta.ft2.ltd/'>here to access the mirror on Netlify</a>. ",
-            "access-via-mirror": "Congratulations! You are using a mirror site, which should speed up access within China (Mainland) and some regions. Click here to <a href='https://duiqt.github.io/herta_kuru/'>visit the source site on GitHub Pages</a>.",
-            "show-credits-text": "Show Credits",
-            "repository-desc": "GitHub Repo",
-            "options-txt-vo-lang": "Voice-Over Language",
-            "options-txt-lang": "Page Language",
-            "dialogs-close": "Close",
-            "dialogs-credits-title": "Credits",
-
-            "CREDITS:main-dev": "Main Developer",
-            "CREDITS:code-contributor": "Code Contributor",
-            "CREDITS:artist": "Artist",
-            "CREDITS:localization": "Localization Contributor",
-            "CREDITS:localization:Korean": "Korean Localization Contributor",
-            "CREDITS:localization:Japanese": "Japanese Localization Contributor",
-            "CREDITS:localization:Indonesian": "Indonesian Localization Contributor",
-            "CREDITS:inspiration": "Inspiration"
+            "counter-button": ["ก็บอกว่าไม่รู้วว~!", "กูไม่รู้วว~!", "ใครจะไปรู้อ่ะ?!"]
         },
         cardImage: "img/pomsmile.jpg"
-    }, "cn": {
-        audioList: [
-            "audio/cn/japairudaingai.mp3",
-            "audio/cn/mairu.mp3",
-            "audio/cn/pommairukunrumaila.mp3",
-        ],
-        texts: {
-            "page-title": "黑塔转圈圈",
-            "doc-title": "咕噜噜~",
-            "page-descriptions": "给黑塔酱写的小网站，对，就是那个<del>烦人的</del>最可爱的《崩坏：星穹铁道》角色！",
-            "counter-descriptions": ["黑塔已经咕噜噜~了", "黑塔已经转了"],
-            "counter-unit": ["次", "次圈圈"],
-            "counter-button": ["转圈圈~", "咕噜噜！"],
-            "access-via-pages": "您目前是通过 GitHub Pages 访问。对于中国大陆或其他一些地区的用户，请<a href='https://herta.ft2.ltd/'>单击此处访问 Netlify 上的镜像</a>。",
-            "access-via-mirror": "恭喜！你正在使用镜像站，这应当会加速在中国大陆及部分地区境内的访问。点此<a href='https://duiqt.github.io/herta_kuru/'>访问 GitHub Pages 上的源站</a>。",
-            "show-credits-text": "查看感谢页",
-            "repository-desc": "GitHub 仓库",
-            "options-txt-vo-lang": "语音语言",
-            "options-txt-lang": "界面语言",
-            "dialogs-close": "关闭",
-            "dialogs-credits-title": "制作人员名单",
-
-            "CREDITS:main-dev": "主要开发者",
-            "CREDITS:code-contributor": "代码贡献者",
-            "CREDITS:artist": "艺术家",
-            "CREDITS:localization": "本地化贡献者",
-            "CREDITS:localization:Korean": "韩国本地化贡献者",
-            "CREDITS:localization:Japanese": "日本本地化贡献者",
-            "CREDITS:localization:Indonesian": "印度尼西亚本地化贡献者",
-            "CREDITS:inspiration": "灵感来源"
-
-        },
-        cardImage: "img/card_cn.jpg"
-    },
-    "ja": {
-        audioList: [
-            "audio/ja/japairudaingai.mp3",
-            "audio/ja/pommairukunrumaila.mp3",
-            "audio/ja/mairu.mp3",
-            "audio/ja/youngmairu.mp3",
-            "audio/ja/kaijapairu.mp3",
-        ],
-        texts: {
-            "page-title": "ヘルタクルへようこそ~",
-            "doc-title": "クル クル~",
-            "page-descriptions": "このサイトはヘルタのために作られた、 あの崩壊：スターレイルの <del>悩ましい</del> かわいい天才キャラー。",
-            "counter-descriptions": "全世界のクル再生数",
-            "counter-unit": "回",
-            "counter-button": "クル クル~!",
-            "access-via-pages": "今アクセスしてるページはぎGitHubです。中国大陸まだは他の地域のユーサーはNetlifyのミラーに入るために、<a href='https://herta.ft2.ltd/'>ここにクリックして</a>ください。",
-            "access-via-mirror": "おめでとうございます！今はもうミラーサイトを使っています、中国大陸まだは他の地域のアクセス速度が速くなります。サイトのソースを見たいなら、<a href='https://duiqt.github.io/herta_kuru/'>ここにクリックして</a>、GitHubページで見てください。",
-            "show-credits-text": "Show Credits",
-            "repository-desc": "GitHub Repo",
-            "options-txt-vo-lang": "Voice-Over Language",
-            "options-txt-lang": "Page Language",
-            "dialogs-close": "Close",
-            "dialogs-credits-title": "Credits"
-        },
-        cardImage: "img/card_ja.jpg"
-    },
-    "kr": {
-        audioList: [
-            // TODO audio random weight
-            "audio/kr/kr_1.mp3",
-            "audio/kr/kr_2.mp3",
-            "audio/kr/kr_3.mp3"
-        ],
-        texts: {
-            "page-title": "헤르타빙글 환영합니다~",
-            "doc-title": "빙글 빙글~",
-            "page-descriptions": "이 웹사이트는 헤르타를 위해 만들어졌습니다, 붕괴: 스타레일 의 <del>귀찮은</del> 귀여운 천재 ",
-            "counter-descriptions": "전 세계 빙글 조회수",
-            "counter-unit": "번",
-            "counter-button": "빙글 빙글~!",
-            "access-via-pages": "당신은 GitHub를 통해 액세스하고 있습니다. 중국 또는 기타 지역 사용자의 경우 여기를 <a href='https://herta.ft2.ltd/'>클릭하여 Netlify의 미러 액세스하십시오</a>. ",
-            "access-via-mirror": "축하합니다. 당신은 미러 웹 사이트를 통해 액세스하고 있습니다, 이렇게 하면 중국 및 일부 다른 지역에서의 액세스 속도가 빨라집니다. 여기를 <a href='https://duiqt.github.io/herta_kuru/'> 클릭하여 GitHub의 소스 페이지에 액세스하십시오</a>. ",
-            "show-credits-text": "Show Credits",
-            "repository-desc": "GitHub Repo",
-            "options-txt-vo-lang": "Voice-Over Language",
-            "options-txt-lang": "Page Language",
-            "dialogs-close": "Close",
-            "dialogs-credits-title": "Credits"
-        },
-        cardImage: "img/card_kr.jpg"
-    },
-    "id": {
-        audioList: null,
-        texts: {
-            "page-title": "Selamat datang di Herta kuru~",
-            "doc-title": "Kuru Kuru~",
-            "page-descriptions": "Situs web yang dipersembahkan kepada Herta, sang Karakter Jenius <del>ngeselin</del> dari Honkai: Star Rail.",
-            "counter-descriptions": ["Kuru nya telah dipencet sebanyak", "Herta telah ter-kuru-kan sebanyak"],
-            "counter-unit": "kali",
-            "counter-button": ["Pencet kuru nya~!", "Kuru kuru~!"],
-            "access-via-pages": "Kamu saat ini sedang mengakses melalui Laman GitHub. Untuk pengguna berdomisili di Tiongkok (Daratan) dan wilayah lainnya, silakan klik <a href='https://herta.ft2.ltd/'> di sini untuk mengakses mirror nya di Netlify</a>. ",
-            "access-via-mirror": "Selamat! Kamu sedang menggunakan situs mirror, yang mana seharusnya mempercepat akses untuk wilayah sekitar Tiongkok (daratan) dan wilayah lainnya . Silakan klik <a href='https://duiqt.github.io/herta_kuru/'> di sini untuk mengunjungi situs sumbernya pada Laman Github</a>.",
-            "show-credits-text": "Tampilkan Credit",
-            "repository-desc": "GitHub Repo",
-            "options-txt-vo-lang": "Voice-Over Language",
-            "options-txt-lang": "Page Language",
-            "dialogs-close": "Close",
-            "dialogs-credits-title": "Credits"
-        },
-        cardImage: "img/card_id.jpg"
-    },
-    "pt": {
-        audioList: null,
-        texts: {
-            "page-title": "Bem-vindo ao kuru~ da herta",
-            "doc-title": "Kuru Kuru~",
-            "page-descriptions": "O site para a Herta, a personagem mais <del>irritante</del> fofa e gênia do Honkai: Star Rail que existe.",
-            "counter-descriptions": ["O kuru~ já  foi clicado", "Herta ja falou kuru~ "],
-            "counter-unit": "vezes",
-            "counter-button": "Kuru kuru~!",
-            "access-via-pages": "No momento, você está acessando por meio do GitHub Pages. Para usuários na China (continente) ou algumas regiões, clique <a href='https://herta.ft2.ltd/'>aqui pode acessar via Netlify</a>. ",
-            "access-via-mirror": "Parabéns! Você está usando um site espelho, o que deve acelerar o acesso na China (continente) e algumas regiões. Clique aqui para <a href='https://duiqt.github.io/herta_kuru/'>visitar o site de origem no GitHub Pages</a>.",
-            "show-credits-text": "Mostrar Créditos",
-            "repository-desc": "GitHub Repo",
-            "options-txt-vo-lang": "Idioma da voz",
-            "options-txt-lang": "Idioma da página",
-            "dialogs-close": "Fechar",
-            "dialogs-credits-title": "Créditos"
-        },
-        cardImage: "img/card_pt.jpg"
-    },
+    }
 };
 
 (() => {
@@ -242,17 +103,17 @@ var LANGUAGES = {
         localCounter.textContent = localCount.toLocaleString('en-US');
         triggerRipple(e);
         playKuru();
-        animateHerta();
+        animateBigPom();
         refreshDynamicTexts();
     });
 
-    // try caching the hertaa1.gif and hertaa2.gif images by calling the tryCacheUrl function
-    cacheStaticObj("img/image6.png");
-    cacheStaticObj("img/image5.png");
-    cacheStaticObj("img/image4.png");
-    cacheStaticObj("img/image3.png");
-    cacheStaticObj("img/image2.png");
+    // try caching the image1 to image6.png images by calling the tryCacheUrl function
     cacheStaticObj("img/image1.png");
+    cacheStaticObj("img/image2.png");
+    cacheStaticObj("img/image3.png");
+    cacheStaticObj("img/image4.png");
+    cacheStaticObj("img/image5.png");
+    cacheStaticObj("img/image6.png");
 
     // Define a function that takes an array as an argument and returns a random item from the array
     function randomChoice(myArr) {
@@ -272,7 +133,7 @@ var LANGUAGES = {
 
     function getRandomAudioUrl() {
         var localAudioList = getLocalAudioList();
-        if (current_vo_language == "ja") {
+        if (current_vo_language == "th") {
             const randomIndex = Math.floor(Math.random() * 5);
             return localAudioList[randomIndex];
         }
@@ -296,7 +157,7 @@ var LANGUAGES = {
         });
     }
 
-    function animateHerta() {
+    function animateBigPom() {
         let id = null;
         const random = Math.floor(Math.random() * 6) + 1;
         const elem = document.createElement("img");
@@ -351,149 +212,6 @@ var LANGUAGES = {
                     document.getElementById(textId).innerHTML = randomChoice(value);
         });
     };
-
-    // NOTE the deployment on Github pages is stopped and deprecated. This tip is not useful anymore.
-    // if (location.hostname.endsWith("duiqt.github.io")) {
-    //     window.location.href = "https://herta.onrender.com";
-    // }
-
-    // This function create bilibili icon in 2 cases: activated & inactivated
-    function bilibiliIcon(color) {
-        return `<i class="mdui-list-item-icon mdui-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" style="fill: ${color};">
-        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-        <path d="M488.6 104.1C505.3 122.2 513 143.8 511.9 169.8V372.2C511.5 398.6 502.7 420.3 485.4 437.3C468.2 454.3 446.3 463.2 419.9 464H92.02C65.57 463.2 43.81 454.2 26.74 436.8C9.682 419.4 .7667 396.5 0 368.2V169.8C.7667 143.8 9.682 122.2 26.74 104.1C43.81 87.75 65.57 78.77 92.02 78H121.4L96.05 52.19C90.3 46.46 87.42 39.19 87.42 30.4C87.42 21.6 90.3 14.34 96.05 8.603C101.8 2.868 109.1 0 117.9 0C126.7 0 134 2.868 139.8 8.603L213.1 78H301.1L375.6 8.603C381.7 2.868 389.2 0 398 0C406.8 0 414.1 2.868 419.9 8.603C425.6 14.34 428.5 21.6 428.5 30.4C428.5 39.19 425.6 46.46 419.9 52.19L394.6 78L423.9 78C450.3 78.77 471.9 87.75 488.6 104.1H488.6zM449.8 173.8C449.4 164.2 446.1 156.4 439.1 150.3C433.9 144.2 425.1 140.9 416.4 140.5H96.05C86.46 140.9 78.6 144.2 72.47 150.3C66.33 156.4 63.07 164.2 62.69 173.8V368.2C62.69 377.4 65.95 385.2 72.47 391.7C78.99 398.2 86.85 401.5 96.05 401.5H416.4C425.6 401.5 433.4 398.2 439.7 391.7C446 385.2 449.4 377.4 449.8 368.2L449.8 173.8zM185.5 216.5C191.8 222.8 195.2 230.6 195.6 239.7V273C195.2 282.2 191.9 289.9 185.8 296.2C179.6 302.5 171.8 305.7 162.2 305.7C152.6 305.7 144.7 302.5 138.6 296.2C132.5 289.9 129.2 282.2 128.8 273V239.7C129.2 230.6 132.6 222.8 138.9 216.5C145.2 210.2 152.1 206.9 162.2 206.5C171.4 206.9 179.2 210.2 185.5 216.5H185.5zM377 216.5C383.3 222.8 386.7 230.6 387.1 239.7V273C386.7 282.2 383.4 289.9 377.3 296.2C371.2 302.5 363.3 305.7 353.7 305.7C344.1 305.7 336.3 302.5 330.1 296.2C323.1 289.9 320.7 282.2 320.4 273V239.7C320.7 230.6 324.1 222.8 330.4 216.5C336.7 210.2 344.5 206.9 353.7 206.5C362.9 206.9 370.7 210.2 377 216.5H377z"/>
-        </svg>
-        </i>`;
-    }
-
-    // This func adds avatars for credits and with href for those having social link
-    function addAvatar(socialLink, currentIcon) {
-        let avatar = `<img src="static/credits/${currentIcon}"/>`;
-        if (socialLink == '') return avatar;
-        return `<a href="${socialLink}" target="_blank">${avatar}</a>`;
-    }
-
-    // This function fetches data stored in a JSON file and displays it in a dialog box.
-    function showCredits() {
-        fetch("static/credits/list.json").then(response => response.json()).then((data) => {
-            var contributors = data.contributors;
-            contributors = randomShuffle(contributors);
-            var creditsHtmlContent = `<p>in no specific order</p>`;
-            creditsHtmlContent += `<ul class="mdui-list">`;
-            for (let i = 0; i < contributors.length; i++) {
-                var current = contributors[i];
-                let renderedName = current.username;
-                if (current.name != undefined) {
-                    renderedName += " (" + current.name + ")";
-                }
-                var socialMediaIcons = bilibiliIcon('#999999');
-                var socialLink = "";
-                $.each(current.socialmedia, (key, value) => {
-                    switch (key) {
-                        case "bilibili":
-                            let uid = value.uid;
-                            let username = value.username;
-                            socialMediaIcons = `<a href="https://space.bilibili.com/${uid}" title="${username}" target="_blank">`;
-                            socialMediaIcons += bilibiliIcon('#00aeec');
-                            socialMediaIcons += `</a>`;
-                            break;
-
-                        case "github":
-                            socialLink = "https://github.com/" + value;
-                            break;
-
-                        case "twitter":
-                            socialLink = "https://twitter.com/" + value;
-                            break;
-                    }
-                });
-                creditsHtmlContent += `<div class="mdui-collapse">
-    <div class="mdui-collapse-item">
-        <div class="mdui-collapse-item-header">
-            <li class="mdui-list-item mdui-ripple">
-                <div class="mdui-list-item-avatar mdlist-ava-fix">
-                    ${addAvatar(socialLink, current.icon)}
-                </div>
-                <div class="mdui-list-item-content">
-                    <div class="mdui-list-item-title">${renderedName}</div>
-                    <div class="mdui-list-item-text mdui-list-item-one-line">
-                        <span class="mdui-text-color-theme-text">${getLocalText("CREDITS:" + current.thing)}</span>
-                    </div>
-                </div>
-                ${socialMediaIcons}
-            </li>
-        </div>
-    </div>
-</div>`;
-            }
-            creditsHtmlContent += `</ul>`;
-
-            mdui.dialog({
-                title: getLocalText("dialogs-credits-title"),
-                content: creditsHtmlContent,
-                buttons: [
-                    {
-                        text: getLocalText("dialogs-close")
-                    }
-                ],
-                history: false
-            });
-        });
-    }
-
-    $("#show-credits-opt").on("click", () => showCredits())
-
-    function showOptions() {
-        mdui.dialog({
-            title: 'Options',
-            content: `<div style="min-height: 350px;" class="mdui-typo">
-    <label id="options-txt-lang">Page Language</label>
-    <select id="language-selector" class="mdui-select" mdui-select='{"position": "bottom"}'>
-        <option value="en">English</option>
-        <option value="cn">中文</option>
-        <option value="ja">日本語</option>
-        <option value="kr">한국어</option>
-        <option value="id">Bahasa Indonesia</option>
-        <option value="pt">Português-BR</option>
-    </select>
-    <br />
-    <label id="options-txt-vo-lang">Voice-Over Language</label>
-    <select id="vo-language-selector" class="mdui-select" mdui-select='{"position": "bottom"}'>
-        <option value="ja">日本語</option>
-        <option value="cn">中文</option>
-        <option value="en">English</option>
-        <option value="kr">한국어</option>
-    </select>
-</div>`,
-            buttons: [
-                {
-                    text: getLocalText("dialogs-close")
-                }
-            ],
-            history: false,
-            onOpen: (_inst) => {
-                $("#vo-language-selector").val(current_vo_language);
-                $("#language-selector").val(current_language);
-
-                $("#language-selector").on("change", (ev) => {
-                    current_language = ev.target.value;
-                    localStorage.setItem("lang", ev.target.value);
-                    multiLangMutation();
-                });
-
-                $("#vo-language-selector").on("change", (ev) => {
-                    current_vo_language = ev.target.value;
-                    localStorage.setItem("volang", ev.target.value);
-                });
-
-                multiLangMutation();
-                mdui.mutation();
-            }
-        });
-    }
-
-    $("#show-options-opt").on("click", () => showOptions())
 })();
 
 // Get the counter element
@@ -509,7 +227,7 @@ if (localStorage.getItem('counterValue')) {
   counterElement.textContent = counterValue;
 }
 
-// Add event listener to the counter button
+// Add event listener to the counter button (Count Up Number)
 document.getElementById('counter-button').addEventListener('click', function() {
   // Increment the counter value
   counterValue++;
@@ -521,7 +239,7 @@ document.getElementById('counter-button').addEventListener('click', function() {
   localStorage.setItem('counterValue', counterValue);
 });
 
-// Add event listener to the restart button
+// Add event listener to the restart button (Reset Counter)
 document.getElementById('restart-button').addEventListener('click', function() {
   // Reset the counter value
   counterValue = 0;
@@ -532,7 +250,3 @@ document.getElementById('restart-button').addEventListener('click', function() {
   // Clear the counter value from local storage
   localStorage.removeItem('counterValue');
 });
-
-
-
-
