@@ -286,8 +286,8 @@ function animateText(element) {
     let posX = Math.random() * (viewportWidth - element.clientWidth);
     let posY = Math.random() * (viewportHeight - element.clientHeight);
 
-    let speedX = (Math.random() * 4.5 - 2) * 1.5; 
-    let speedY = (Math.random() * 4.5 - 2) * 1.5; 
+    let speedX = (Math.random() * 4.5 - 2) * 2; 
+    let speedY = (Math.random() * 4.5 - 2) * 2; 
 
     let isMoving = true;
 
