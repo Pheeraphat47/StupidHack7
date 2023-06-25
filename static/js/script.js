@@ -251,6 +251,7 @@ document.getElementById('restart-button').addEventListener('click', function () 
     localStorage.removeItem('counterValue');
 });
 
+
 function generateRandomText(event) {
     var word = "ไม่รู้";
     var fontSize = Math.floor(Math.random() * 40) + 10;
@@ -268,8 +269,59 @@ function generateRandomText(event) {
     textElement.style.top = posY + 'px';
     textElement.style.transform = 'rotate(' + rotation + 'deg)';
 
+    textElement.addEventListener('click', function () {
+        this.remove();
+    });
+
     document.body.appendChild(textElement);
+
+    animateText(textElement);
 }
+
+// Animate the text element with random movement
+function animateText(element) {
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+
+    let posX = Math.random() * (viewportWidth - element.clientWidth);
+    let posY = Math.random() * (viewportHeight - element.clientHeight);
+
+    let speedX = (Math.random() * 4.5 - 2) * 1.5; 
+    let speedY = (Math.random() * 4.5 - 2) * 1.5; 
+
+    let isMoving = true;
+
+    function updatePosition() {
+        if (isMoving) {
+            posX += speedX;
+            posY += speedY;
+
+            // Reverse direction if the element reaches the viewport edges
+            if (posX < 0 || posX > viewportWidth - element.clientWidth) {
+                speedX *= -1;
+            }
+            if (posY < 0 || posY > viewportHeight - element.clientHeight) {
+                speedY *= -1;
+            }
+
+            element.style.left = posX + 'px';
+            element.style.top = posY + 'px';
+        }
+
+        requestAnimationFrame(updatePosition);
+    }
+
+    // Start the animation loop
+    updatePosition();
+
+    // Stop the movement when the element is clicked
+    element.addEventListener('click', function() {
+        isMoving = false;
+        element.remove();
+    });
+}
+
+
 
 function playBackgroundSound() {
     var backgroundSound = document.getElementById('background-sound');
