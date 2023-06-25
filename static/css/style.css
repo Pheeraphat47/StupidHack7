@@ -366,3 +366,14 @@ h2 {
     top: 0px;
     left: 0px;
 }
+
+.generated-text {
+    position: absolute;
+    font-weight: bold;
+}
+
+#dont-press{
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+}

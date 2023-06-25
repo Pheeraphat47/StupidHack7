@@ -222,31 +222,57 @@ let counterValue = 0;
 
 // Check if counter value is stored in local storage
 if (localStorage.getItem('counterValue')) {
-  // Retrieve the counter value from local storage
-  counterValue = parseInt(localStorage.getItem('counterValue'));
-  counterElement.textContent = counterValue;
+    // Retrieve the counter value from local storage
+    counterValue = parseInt(localStorage.getItem('counterValue'));
+    counterElement.textContent = counterValue;
 }
 
 // Add event listener to the counter button (Count Up Number)
-document.getElementById('counter-button').addEventListener('click', function() {
-  // Increment the counter value
-  counterValue++;
+document.getElementById('counter-button').addEventListener('click', function () {
+    // Increment the counter value
+    counterValue++;
 
-  // Update the counter element
-  counterElement.textContent = counterValue;
+    // Update the counter element
+    counterElement.textContent = counterValue;
 
-  // Save the counter value to local storage
-  localStorage.setItem('counterValue', counterValue);
+    // Save the counter value to local storage
+    localStorage.setItem('counterValue', counterValue);
 });
 
 // Add event listener to the restart button (Reset Counter)
-document.getElementById('restart-button').addEventListener('click', function() {
-  // Reset the counter value
-  counterValue = 0;
+document.getElementById('restart-button').addEventListener('click', function () {
+    // Reset the counter value
+    counterValue = 0;
 
-  // Update the counter element
-  counterElement.textContent = counterValue;
+    // Update the counter element
+    counterElement.textContent = counterValue;
 
-  // Clear the counter value from local storage
-  localStorage.removeItem('counterValue');
+    // Clear the counter value from local storage
+    localStorage.removeItem('counterValue');
 });
+
+function generateRandomText(event) {
+    var word = "ไม่รู้";
+    var fontSize = Math.floor(Math.random() * 40) + 10;
+    var viewportWidth = window.innerWidth;
+    var viewportHeight = window.innerHeight;
+    var posX = Math.floor(Math.random() * (viewportWidth - fontSize));
+    var posY = Math.floor(Math.random() * (viewportHeight - fontSize));
+    var rotation = Math.floor(Math.random() * 360);
+
+    var textElement = document.createElement('div');
+    textElement.textContent = word;
+    textElement.className = 'generated-text';
+    textElement.style.fontSize = fontSize + 'px';
+    textElement.style.left = posX + 'px';
+    textElement.style.top = posY + 'px';
+    textElement.style.transform = 'rotate(' + rotation + 'deg)';
+
+    document.body.appendChild(textElement);
+}
+
+function playBackgroundSound() {
+    var backgroundSound = document.getElementById('background-sound');
+    backgroundSound.play();
+}
+
